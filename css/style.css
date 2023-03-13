@@ -1,0 +1,157 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(0, 0, 12);
+}
+
+.planets #sun {
+  width: 70px;
+  height: 70px;
+  filter: drop-shadow(5px 5px 50px rgba(187, 156, 63, 0.8392156863));
+}
+.planets .sunny {
+  border: 1px dashed rgba(182, 136, 136, 0.194);
+  border-radius: 50%;
+  position: absolute;
+  background-color: rgba(67, 62, 51, 0.118);
+  top: 300px;
+  left: 600px;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+}
+.planets .div-1 {
+  width: 160px;
+  height: 160px;
+}
+.planets .div-2 {
+  width: 230px;
+  height: 230px;
+}
+.planets .div-3 {
+  width: 320px;
+  height: 320px;
+}
+.planets .div-4 {
+  width: 400px;
+  height: 400px;
+}
+.planets .div-5 {
+  width: 500px;
+  height: 500px;
+}
+.planets .div-6 {
+  width: 640px;
+  height: 640px;
+}
+.planets .div-7 {
+  width: 760px;
+  height: 760px;
+}
+.planets .div-8 {
+  width: 860px;
+  height: 860px;
+}
+.planets .div-9 {
+  width: 960px;
+  height: 960px;
+}
+.planets #mercury {
+  width: 15px;
+  height: 15px;
+  filter: drop-shadow(1px 1px 5px rgba(187, 156, 63, 0.4470588235));
+}
+.planets #venus {
+  width: 20px;
+  height: 20px;
+  filter: drop-shadow(1px 1px 5px rgba(187, 156, 63, 0.5803921569));
+}
+.planets #earth {
+  width: 30px;
+  height: 30px;
+}
+.planets #moon {
+  width: 11px;
+  height: 11px;
+  filter: drop-shadow(1px 1px 5px rgba(195, 190, 176, 0.5647058824));
+}
+.planets #mars {
+  width: 22px;
+  height: 22px;
+  filter: drop-shadow(1px 1px 5px rgba(184, 67, 13, 0.7254901961));
+}
+.planets #jupiter {
+  width: 50px;
+  height: 50px;
+  filter: drop-shadow(2px 2px 5px rgba(187, 156, 63, 0.8196078431));
+}
+.planets #saturn {
+  width: 45px;
+  height: 45px;
+  filter: drop-shadow(1px 1px 5px rgba(187, 156, 63, 0.7882352941));
+}
+.planets #uranus {
+  width: 28px;
+  height: 28px;
+  filter: drop-shadow(1px 1px 5px rgba(195, 190, 176, 0.4470588235));
+}
+.planets #neptune {
+  width: 30px;
+  height: 30px;
+  filter: drop-shadow(1px 1px 5px rgba(195, 190, 176, 0.4470588235));
+}
+.planets #pluto {
+  width: 15px;
+  height: 15px;
+  filter: drop-shadow(1px 1px 5px rgba(195, 190, 176, 0.4470588235));
+}
+
+.planet, .sattelite {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+
+.star {
+  position: absolute;
+  background-color: #fff;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  z-index: 5;
+  animation-name: start-star;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes start-star {
+  0%, 100% {
+    opacity: 20%;
+    transform: scale(0.5) rotateY(90deg);
+  }
+  50% {
+    opacity: 100%;
+    transform: scale(1) rotateY(180deg);
+  }
+}
+@keyframes start-line {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(90deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  75% {
+    transform: rotate(270deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}/*# sourceMappingURL=style.css.map */
